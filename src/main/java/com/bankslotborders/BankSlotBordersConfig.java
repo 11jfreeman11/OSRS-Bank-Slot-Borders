@@ -17,7 +17,7 @@ public interface BankSlotBordersConfig extends Config {
  default GridStyle style() { return GridStyle.CONTINUOUS_LINES; }
  @ConfigItem(keyName="dragOnly", name="Only while dragging", description="Show only during an active bank item drag", position=5)
  default boolean dragOnly() { return false; }
- @ConfigItem(keyName="preset", name="Style preset", description="Custom uses your saved settings; selecting Custom restores them without changes", position=6)
+ @ConfigItem(keyName="preset", name="Style preset", description="Presets temporarily override appearance. Editing style, color, transparency, thickness or drag settings switches to Custom automatically.", position=6)
  default GridPreset preset() { return GridPreset.CUSTOM; }
  @ConfigItem(keyName="separateShading", name="Separate shading appearance", description="Use independent color and transparency for shaded squares in Custom mode", position=7)
  default boolean separateShading() { return false; }

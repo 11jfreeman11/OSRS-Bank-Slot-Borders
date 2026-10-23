@@ -1,5 +1,17 @@
 # Bank Slot Borders / Bank Grid
 
+## Preset control fix
+
+Presets temporarily override style, thickness, color and transparency. Changing
+one of those controls, Only while dragging, or the separate-shading controls now
+automatically selects Custom so the edit is applied. Selecting a preset still
+does not overwrite saved custom values. Highlight/guide toggles remain independent
+and do not reset the preset. Separate shading only applies to Shaded squares.
+
+For already-running older builds, select Style preset = Custom manually.
+This source update is not yet in the website launcher, which is pinned to the
+previous public GitHub commit. The local Start-Plugin.ps1 uses these updated sources.
+
 ## Optional extras
 
 Existing appearance is preserved by default: **Style preset = Custom**, and all

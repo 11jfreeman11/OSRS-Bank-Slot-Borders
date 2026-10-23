@@ -1,5 +1,15 @@
 # Grid update validation — October 23, 2026
 
+## Preset control correction
+
+Editing an appearance control while a preset is active now switches to Custom
+via RuneLite's ConfigChanged event. All production sources and the launcher
+compile with Java 11 / cached RuneLite 1.13.3 dependencies. All 14 JUnit tests pass,
+including the prior pixel-preservation checks and three preset-control tests.
+BankGridPainter and the default Custom rendering behavior are unchanged.
+The fix is local and included in the source ZIP/JAR; the hosted launcher remains
+pinned to the earlier GitHub source revision until that revision is updated.
+
 ## Optional features update
 
 All production sources and the development launcher compile with Java 11 and
